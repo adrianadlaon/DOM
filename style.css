@@ -1,0 +1,246 @@
+body {
+    background-image: url("bgg.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 69.3px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0003);
+    font-family: ProtestRevolution-Regular;
+    text-transform: uppercase;
+    line-height: 0.70em;
+    outline: none;
+    animation: animate 7s linear infinite;
+    text-align: right;
+    cursor: pointer;
+    text-align: center;
+}
+
+@keyframes animate {
+    0%, 18%, 20%,50.1%,60%,65.1%,80%,90.1%,92%
+    {
+        box-shadow: none;
+        color: #000000d4        
+    }
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 93.1%, 100%
+    {
+        text-shadow: 0 0 10px #03bcf4,
+            0 0 20px #03bcf4,
+            0 0 40px #03bcf4,
+            0 0 80px #03bcf4,
+            0 0 160px #03bcf4;
+        color: #ffffff
+    }
+}
+
+#asd{
+    padding: 20px;
+}
+
+.container {
+    margin-top: 20PX;
+    padding-top: 50px;
+    background-color: rgba(170, 181, 181, 0.5);
+    border-radius: 50px;
+    backdrop-filter: blur(20px);
+}
+  
+.form-group label{
+    padding: 10px;
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    font-family: cursive;
+    margin-left: 50px;
+}
+
+.form-group textarea{
+    font-size: 20px;
+    padding: 15px;
+}
+
+#input-field, textarea {
+    border-radius: 10px;
+    max-width: 800px;
+    margin-left: 50px;
+    font-size: 20px;
+    padding: 15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.btn{ 
+    padding: 15px;
+    animation: pulse 1.5s infinite;
+    margin-right: 25px;
+    margin-bottom: 20px;
+    font-family: Audiowide-Regular;
+    border: #00000000;
+    border-radius: 50% 10% 50% 10% / 10% 50% 10% 50%;
+    font-size: 70px;
+    padding: 25px;
+    background-color: cyan;
+    letter-spacing: 2px;
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan;
+}
+
+#cardpost{
+    font-size: 50px;
+    padding: 50px;
+}
+
+p {
+    font-size: 50px;
+    font-family: Arial, sans-serif;
+    color: #fff; 
+    margin: 0; 
+    padding: 20px;
+    background: linear-gradient(135deg, #00FFFF, #8A2BE2);
+    border-radius: 10px;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+
+
+h2{
+    font-size: 100px;
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #765959, #905f5f);
+    border-radius: 10px;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+
+
+.card-header{
+    text-align: center;
+    padding: 0;
+}
+
+.card{
+    margin-right: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.btn:active{
+    transform: scale(0.95);
+}
+
+.btn:hover{
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 
+    0 0 50px cyan;
+}
+
+
+.card-header a{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    padding: 30px 60px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.card-header a:before{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    width: 50%;
+    background: rgba(255, 255, 255, 0);
+}
+
+.card-header a span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3.5px;
+    background: linear-gradient(to right, #ed0909, #5203fc);
+    animation: animate1 8s linear infinite;
+}
+
+@keyframes animate1{
+    0%
+    {
+        transform: translateX(-100%);
+    }
+    100%
+    {
+        transform: translateY(100%);
+    }
+}
+
+.card-header a span:nth-child(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3.5px;
+    height: 100%;
+    background: linear-gradient(to bottom, #ed0909, #5203fc);
+    animation: animate2 5s linear infinite;
+}
+
+@keyframes animate2{
+    0%
+    {
+        transform: translateY(-100%);
+    }
+    100%
+    {
+        transform: translateX(100%);
+    }
+}
+
+.card-header a span:nth-child(3){
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3.5px;
+    background: linear-gradient(to left, #ed0909, #5203fc);
+    animation: animate3 4s linear infinite;
+}
+
+@keyframes animate3{
+    0%
+    {
+        transform: translateX(100%);
+    }
+    100%
+    {
+        transform: translateX(-100%);
+    }
+}
+
+.container .card-header a span:nth-child(4){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3.5px;
+    height: 100%;
+    background: linear-gradient(to top, #ed0909, #5203fc);
+    animation: animate4 2s linear infinite;
+}
+
+@keyframes animate4{
+    0%
+    {
+        transform: translateY(100%);
+    }
+    100%
+    {
+        transform: translateY(-100%);
+    }
+}
